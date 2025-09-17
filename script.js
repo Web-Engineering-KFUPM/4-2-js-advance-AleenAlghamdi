@@ -77,7 +77,7 @@ const MyCourses = { "ICS202": "Data Structures",
 
 // 2) Iterate with for...in to display key and value
 for (let code in MyCourses) {
-    console.log(${code} → ${courses[code]});
+    console.log(${code} → ${MyCourses[code]});
 }
 
 
