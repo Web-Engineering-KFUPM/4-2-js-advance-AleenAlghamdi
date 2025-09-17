@@ -67,6 +67,20 @@ Task:
 2) Iterate over it with for...in and display each key and value.
 */
 
+// Task: Object as a "map" (key → value)
+
+// 1) Create an object for course codes → titles
+const MyCourses = { "ICS202": "Data Structures",
+    "ICS321": "Database Systems",
+    "SWE363": "Software Engineering Design",
+    "STAT319": "Probability and Statistics"};
+
+// 2) Iterate with for...in to display key and value
+for (let code in MyCourses) {
+    console.log(${code} → ${courses[code]});
+}
+
+
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
 // =========================================
