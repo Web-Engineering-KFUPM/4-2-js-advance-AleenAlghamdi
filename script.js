@@ -90,6 +90,22 @@ Task:
 2) Use .charAt(index) and .length to output characters and size.
 */
 
+
+// Task: String object or plain string
+
+// 1) Create a string (plain string or new String object)
+let myString = "Hello JavaScript";  // plain string
+
+// 2) Use .charAt(index) and .length
+console.log("String:", myString);
+console.log("Length:", myString.length);
+
+console.log("First character:", myString.charAt(0));   // H
+console.log("Fifth character:", myString.charAt(4));   // o
+console.log("Last character:", myString.charAt(myString.length - 1)); // t
+
+
+
 // ===================================
 // TODO-4: DATE — day, month, and year
 // ===================================
