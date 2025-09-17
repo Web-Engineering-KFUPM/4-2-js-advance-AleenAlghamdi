@@ -165,6 +165,26 @@ Task:
    in each block so you can see the flow of control.
 */
 
+// 1) Function that returns the maximum element
+function getMax(arr) {
+    if (arr.length === 0) {
+        throw new Error("Array is empty! Cannot find maximum.");
+    }
+    return Math.max(...arr);
+}
+
+// 2 & 3) Try with empty array, handle with try-catch-finally
+try {
+    const numbers = [];  // intentionally empty
+    const maxValue = getMax(numbers);
+    console.log("Maximum value:", maxValue);
+} catch (e) {
+    console.log("Error caught:", e.message);
+} finally {
+    console.log("Finally block executed (cleanup or closing tasks here).");
+}
+
+
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
