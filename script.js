@@ -141,6 +141,19 @@ Task:
 3) Display both values.
 */
 
+// 1) Declare an array with 10 numbers
+const numbers = [12, 45, 7, 89, 23, 56, 3, 78, 15, 34];
+
+// 2) Use spread syntax with Math.min and Math.max
+const minVal = Math.min(...numbers);
+const maxVal = Math.max(...numbers);
+
+// 3) Display both values
+console.log("Numbers:", numbers);
+console.log("Minimum value:", minVal);
+console.log("Maximum value:", maxVal);
+
+
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
 // ===================================================================
