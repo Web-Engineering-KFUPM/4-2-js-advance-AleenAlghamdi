@@ -30,7 +30,7 @@ const student = {
 
     // Getter for fullName
     get fullName() {
-        return ${this.firstName} ${this.lastName};
+        return `${this.firstName} ${this.lastName}`; // Fixed template literal
     },
 
     // Getter for GPA
@@ -70,16 +70,17 @@ Task:
 // Task: Object as a "map" (key → value)
 
 // 1) Create an object for course codes → titles
-const MyCourses = { "ICS202": "Data Structures",
+const MyCourses = {
+    "ICS202": "Data Structures",
     "ICS321": "Database Systems",
     "SWE363": "Software Engineering Design",
-    "STAT319": "Probability and Statistics"};
+    "STAT319": "Probability and Statistics"
+}; // Fixed object syntax
 
 // 2) Iterate with for...in to display key and value
 for (let code in MyCourses) {
-    console.log(${code} → ${MyCourses[code]});
+    console.log(`${code} → ${MyCourses[code]}`); // Fixed template literal
 }
-
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
@@ -89,7 +90,6 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
-
 
 // Task: String object or plain string
 
@@ -103,8 +103,6 @@ console.log("Length:", myString.length);
 console.log("First character:", myString.charAt(0));   // H
 console.log("Fifth character:", myString.charAt(4));   // o
 console.log("Last character:", myString.charAt(myString.length - 1)); // t
-
-
 
 // ===================================
 // TODO-4: DATE — day, month, and year
@@ -130,7 +128,6 @@ console.log("Day of Month:", day);
 console.log("Month (0–11):", month);
 console.log("Year:", year);
 
-
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
 // ============================================================
@@ -152,7 +149,6 @@ const maxVal = Math.max(...numbers);
 console.log("Numbers:", numbers);
 console.log("Minimum value:", minVal);
 console.log("Maximum value:", maxVal);
-
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
@@ -184,7 +180,6 @@ try {
     console.log("Finally block executed (cleanup or closing tasks here).");
 }
 
-
 // ===================================================================================
 // TODO-7: REGEX + forEach — find words containing 'ab' and log matches from the list
 // ===================================================================================
@@ -197,7 +192,6 @@ Given: const words = ["ban", "babble", "make", "flab"];
 4) Display the words that matches the pattern.
 */
 
-
 // Given words
 const words = ["ban", "babble", "make", "flab"];
 
@@ -209,9 +203,8 @@ console.log("Checking words for 'ab':");
 words.forEach(word => {
     if (pattern.test(word)) {
         // 3) Log "<word> matches!"
-        console.log(${word} matches!);
+        console.log(`${word} matches!`); // Fixed template literal
     }
 });
-
 
 // End of Advance JavaScript Lab — good luck!
