@@ -116,6 +116,21 @@ Task:
 //    (Hint: getDate(), getMonth(), getFullYear() )
 */
 
+// 1) Create a Date for the current moment
+const now = new Date();
+
+// 2) Extract parts
+const day = now.getDate();        // day of the month (1–31)
+const month = now.getMonth();     // month (0–11)
+const year = now.getFullYear();   // full year (e.g., 2025)
+
+// Display
+console.log("Current Date Object:", now);
+console.log("Day of Month:", day);
+console.log("Month (0–11):", month);
+console.log("Year:", year);
+
+
 // ============================================================
 // TODO-5: ARRAY + SPREAD — find MIN and MAX from 10 numbers
 // ============================================================
